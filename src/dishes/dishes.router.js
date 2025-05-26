@@ -12,6 +12,7 @@ router.route("/")
 router.route("/:dishId")
     .get(controller.read)
     .put(controller.update)
+    .delete(controller.delete)
     .all(methodNotAllowed);
 
 module.exports = router;
